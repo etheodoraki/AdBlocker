@@ -13,7 +13,6 @@ sudo ./adblock.sh -help
 
 ### Options:
 ### 1.
-
     ./adblock.sh -domains 
 : Configure adblock rules based on the domain names of domainNames.txt file
 Reads each domain name from the file "domainNames.txt" line by line.
@@ -35,29 +34,29 @@ ip6tables -A INPUT -s ${iptobeblocked} -j REJECT    or
 iptables -A INPUT -s ${iptobeblocked} -j REJECT     respectively.
 
 ### 3.
-   ./adblock.sh -save
+    ./adblock.sh -save
 : Save rules to adblockRules file
 using the iptables-save command, saves the rules to adblockRules in current directory
 
 ### 4.
-   ./adblock.sh -load
+        ./adblock.sh -load
 : Load rules from adblockRules file
 using the iptables-restore command, loads the rules written on adblockRules file 
 
 ### 5.
-   ./adblock.sh -list
+        ./adblock.sh -list
 : List curent rules of all tables
 using the  iptables -L -v -n|more and ip6tables -L -v -n|more commands respectively,
 displays all tables rules
 
 ### 6.
-    ./adblock.sh -reset
+        ./adblock.sh -reset
 : Reset rules to default settings - ACCEPT all
 sets accept all to all connections 
 deletes all existing rules with iptables(and ip6tables) -flush
 
 ### 7.
-    ./adblock.sh -help
+        ./adblock.sh -help
 : Display options menu and exit
 
 ### Notes:
