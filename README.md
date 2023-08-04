@@ -11,7 +11,7 @@ sudo ./adblock.sh -help
 *************************
 ```
 
-                                Options:
+### Options:
 ### 1.
 
     ./adblock.sh -domains 
