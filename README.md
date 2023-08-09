@@ -1,5 +1,4 @@
 # A simple adblocking mechanism
-Theodoraki Emmanouela
 
 ### [ACE414] Services and Systems Security
 ## Assignment 7
